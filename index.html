@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="main.css">
+ <title>電卓</title>
+ </head>
+ 
+ <body>
+   <div class="wrapper">
+       <!--フォームの表示（読み取り専用にして、初期値を0とする-->
+       <input readonly id="result" type="text" value="0">
+        <!--1行目-->
+        <div>
+          <button onclick="num_click(this.innerHTML)">7</button><button onclick="num_click(this.innerHTML)">8</button><button onclick="num_click(this.innerHTML)">9</button><button onclick="ope_click(this.innerHTML)">+</button>
+        </div>
+        <!--2行目-->
+        <div>
+          <button onclick="num_click(this.innerHTML)">4</button><button onclick="num_click(this.innerHTML)">5</button><button onclick="num_click(this.innerHTML)">6</button><button onclick="ope_click(this.innerHTML)">-</button>
+        </div>
+        <!--3行目-->
+        <div>
+          <button onclick="num_click(this.innerHTML)">1</button><button onclick="num_click(this.innerHTML)">2</button><button onclick="num_click(this.innerHTML)">3</button><button onclick="ope_click(this.innerHTML)">*</button>
+        </div>
+        <!--4行目-->
+        <div>
+          <button onclick="num_click(this.innerHTML)">0</button><button onclick="num_click(this.innerHTML)">00</button><button onclick="point_click(this.innerHTML)">.</button><button onclick="ope_click(this.innerHTML)">/</button>
+        </div>
+        <!--5行目-->
+        <div>
+          <button class ="last-row" onclick="ac_click()">AC</button><button class = "last-row" onclick="equal_click()">=</button>
+        </div>
+    </div>
+ <script src="main.js"></script>
+ </body>
+ </html>

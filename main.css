@@ -1,0 +1,34 @@
+/*全体*/
+.wrapper{
+  max-width: 220px;
+}
+
+/*フォーム*/
+input{
+ border: none;
+ width: 98%;
+ background-color: black;
+ color: white;
+ text-align:right;
+}
+
+/*ボタン*/
+button {
+width: 24%;
+margin:1px;
+padding-top:3px;
+background-color: #d3d3d3;
+border:1px solid;
+border-radius:3px;
+}
+
+/*ボタンの最終行*/
+.last-row{
+    width: 49%;
+}
+
+/*ボタンを押した際*/
+button:focus{
+ border:solid 1px blue;
+}
+
