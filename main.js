@@ -28,10 +28,13 @@ function num_click(num){
   //フォームの末尾が演算子の状態で、00キーを押した場合
   }else if(check_ope_last() && num == "00"){
     //値に00を追加しない
-  //フォームの末尾が0の状態で、小数点を含んでいない場合
-  }else if(result.value.slice(-1) == "0" && !included_decimal_point){
+  //フォームの末尾が0かつ小数点を含んでいない状態で、00キーを押した場合
+  }else if(result.value.slice(-1) == "0"  && !included_decimal_point && num == "00"){
+    //値に00を追加しない
+  //フォームの末尾が0かつ小数点を含んでいない状態で、00以外の数字キーを押した場合
+  }else if(result.value.slice(-1) == "0"  && !included_decimal_point){
     result.value = result.value.slice(0,-1) + num;//フォームの末尾を削除して、押した数字キーの値を追加
-  //それ以外の場合
+  //それ外の場合
   }else{
     result.value += num; //フォームの値に、押した数字キーの値を追加
   }
