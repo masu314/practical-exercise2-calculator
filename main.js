@@ -34,7 +34,7 @@ function num_click(num){
   //フォームの末尾が0かつ小数点を含んでいない状態で、00以外の数字キーを押した場合
   }else if(result.value.slice(-1) == "0"  && !included_decimal_point){
     result.value = result.value.slice(0,-1) + num;//フォームの末尾を削除して、押した数字キーの値を追加
-  //それ外の場合
+  //それ以外の場合
   }else{
     result.value += num; //フォームの値に、押した数字キーの値を追加
   }
