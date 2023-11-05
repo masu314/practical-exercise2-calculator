@@ -14,7 +14,7 @@ function ac_click(){
   included_decimal_point = false; //小数点が含まれていない状態にする
 }
 
-//数字キー(1~9)押下
+//数字キー押下
 function num_click(num){
   //計算済みの場合
   if(is_calculated){
